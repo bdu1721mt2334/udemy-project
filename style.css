@@ -6,6 +6,7 @@
 
 body {
         font-family: "Gabarito", serif;
+        min-height: 200vh;
         
 }
 
@@ -16,6 +17,10 @@ body {
     justify-content:space-between ;
     border-bottom: solid black 1px;
     align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar-one__name {
@@ -25,7 +30,7 @@ body {
 }
 
 .navbar-two {
-    outline: solid black 1px;
+    outline: solid rgb(0, 0, 0) 1px;
     border-radius: 20px;
     width: 50%;
     align-items: left;
@@ -52,6 +57,30 @@ body {
 
 
 }
+
+.mylearning {
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning-popup {
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    padding: 10px;
+    border: solid black 1px;
+    top: 30px;
+    right: 0;
+    display: none;
+    
+}
+
+.mylearning:hover .mylearning-popup { 
+    display: block;
+    position: 2s;
+}
+
+
 
 
 .categories-one {
@@ -80,11 +109,29 @@ body {
     transition: 1s;
 }
 
-
+.sale {
+    position: relative;
+}
 
 .sale img{
     width: 100%;
+    
 }
+
+.sale-offer {
+    width: 43%;
+    background-color: white;
+    border: solid rgb(140, 27, 197);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    color: block;
+    position: absolute;
+    bottom: 300px;
+    left: 20px;
+}
+
+
 
 
 
