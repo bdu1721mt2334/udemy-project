@@ -54,6 +54,8 @@ body {
 .navbar-three {
     display: flex;
     gap: 10px;
+    align-items: center;
+    margin-left: 10px;
 
 
 }
@@ -122,6 +124,7 @@ body {
 .sale-offer {
     width: 43%;
     background-color: white;
+    font-size: 16px;
     border: solid rgb(140, 27, 197);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -167,7 +170,9 @@ body {
 }
 
 .course-card {
-    width: 350px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 
 }
 
@@ -242,6 +247,65 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+
+@media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .course-card {
+        flex-basis: 40%;
+    }
+
+    .categories-one {
+        padding: 3px;
+    }
+
+    .categories-one p {
+        font-size: 10px;
+    }    
+
+
+    .navbar-one__name {
+        font-size: 20px;
+    }
+
+    .navbar-two {
+        padding: 5px;
+    }
+
+    .navbar-two input {
+         font-size: 12px;
+    }
+
+    .navbar-three {
+        margin-left: 5px;
+        font-size: 10px;
+        gap: 6px;
+    }
+
+    .sale-offer {
+        width: 40%;
+        height: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        top: 30px;
+        font-size: 6px;
+        
+        
+        
+    }
+
+  
+    
+}
+
 
 
 
