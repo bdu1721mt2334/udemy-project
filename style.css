@@ -91,6 +91,7 @@ body {
     display: flex;
     justify-content:space-between ;
     border-bottom: solid black 1px;
+    cursor: pointer;
 
 
 }
@@ -128,7 +129,25 @@ body {
     color: block;
     position: absolute;
     bottom: 300px;
-    left: 20px;
+    left: 40px;
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    80%{
+        transform: scale(1.1);
+        opacity: 1.1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+
+    }
 }
 
 
