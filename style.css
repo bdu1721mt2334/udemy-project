@@ -261,13 +261,18 @@ body {
     }
 
     .categories-one {
-        padding: 3px;
+        padding: 2px;
     }
 
     .categories-one p {
-        font-size: 10px;
-    }    
+        font-size: 5px;
+        padding: 3px;
+    } 
+    
 
+    .mylearning {
+        font-size: 7px;
+    }
 
     .navbar-one__name {
         font-size: 20px;
@@ -288,7 +293,7 @@ body {
     }
 
     .sale-offer {
-        width: 40%;
+        width: 50%;
         height: 20px;
         padding-top: 10px;
         padding-bottom: 20px;
@@ -296,6 +301,7 @@ body {
         padding-right: 10px;
         position: absolute;
         top: 30px;
+        left: 20px;
         font-size: 6px;
         
         
